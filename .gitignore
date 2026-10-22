@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencias
+node_modules
+
+# Artefactos de compilación (se regeneran con npm run build:vite / build:win)
+dist
+dist-ssr
+dist-electron
+release
+
+# Variables de entorno locales (el proyecto actual no las usa; protección preventiva)
+.env
+.env.*
+!.env.example
+*.local
+
+# Bases de datos de usuario y datos contables (nunca publicar)
+*.sqlite
+*.sqlite3
+*.db
+
+# Editor / sistema operativo
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

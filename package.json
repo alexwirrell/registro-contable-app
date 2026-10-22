@@ -1,0 +1,61 @@
+{
+  "name": "registro-contable-app",
+  "private": true,
+  "version": "0.1.0-alpha",
+  "description": "Aplicación para procesar y registrar documentos contables.",
+  "author": "AlexWirrell",
+  "license": "UNLICENSED",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build:vite": "vite build",
+    "build:win": "npm run build:vite && electron-builder --win --x64",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "better-sqlite3": "^12.2.0",
+    "fast-xml-parser": "^5.2.5",
+    "lucide-react": "^0.537.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.3.93",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-resizable-panels": "^3.0.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "electron": "^28.2.1",
+    "electron-builder": "^24.9.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.0.12",
+    "vite-plugin-electron": "^0.28.1",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  },
+  "build": {
+    "productName": "Registro Contable App",
+    "appId": "com.alexwirrell.registrocontableapp",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
