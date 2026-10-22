@@ -2,6 +2,9 @@
 
 Aplicación de escritorio (Electron + React) para procesar y registrar documentos contables: permite abrir PDF y XML de facturas electrónicas, anotar valores sobre el PDF, editar los renglones contables extraídos del XML, guardar los datos en una base SQLite local y exportar el PDF anotado.
 
+<img width="1368" height="1034" alt="image" src="https://github.com/user-attachments/assets/5d24e764-c3a8-484c-a8ec-3072a566cd38" />
+
+
 > **Estado: alfa (`0.1.0-alpha`).** No hay pruebas automatizadas ni licencia definida. Consulta [`PROJECT_AUDIT.md`](PROJECT_AUDIT.md) para el estado detallado.
 
 ## Leyenda de verificación
@@ -56,7 +59,7 @@ El proyecto **no define** el campo `engines` en `package.json`; las versiones an
 Ejecuta en una terminal (PowerShell, CMD o Git Bash). Sustituye `<URL-DEL-REPOSITORIO>` por la URL de tu repositorio en GitHub:
 
 ```bash
-git clone <URL-DEL-REPOSITORIO>
+git clone https://github.com/alexwirrell/registro-contable-app
 cd registro-contable-app
 ```
 
